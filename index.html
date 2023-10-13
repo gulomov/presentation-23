@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>pepe's prez</title>
+    <title>Jalol's prez</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,36 +10,35 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="custom-styles.css">
+</style>
   </head>
   <body class="show">
     <main>
       <div id="tools" class="tools">
-        <div class="buttons">
-          <button id="restart" class="restart icon">restart</button>
-          <button id="previousChapter" class="pprevious icon">
-            previous chapter
-          </button>
-          <button id="nextChapter" class="nnext icon">next chapter</button>
-          <button id="previousSlide" class="previous icon">
-            previous slide
-          </button>
-          <button id="nextSlide" class="next icon">next slide</button>
+       <div class="buttons">
+          <button id="restart" class="btn btn-primary restart icon">Restart</button>
+          <button id="previousChapter" class="btn btn-primary pprevious icon">Previous Chapter</button>
+          <button id="nextChapter" class="btn btn-primary nnext icon">Next Chapter</button>
+          <button id="previousSlide" class="btn btn-primary previous icon">Previous Slide</button>
+          <button id="nextSlide" class="btn btn-primary next icon">Next Slide</button>
         </div>
-        <div>
+        <div class="titles-content">
           <span id="titles" class="titles"
-            ><span>Intro (<span class="position">1</span>/12)</span
-            ><span>Tools (<span class="position">1</span>/24)</span
-            ><span>Content (<span class="position">1</span>/8)</span
-            ><span>Presentation (<span class="position">1</span>/12)</span
-            ><span>Scripting (<span class="position">1</span>/12)</span
-            ><span>Scripting (<span class="position">1</span>/3)</span></span
+            ><span>Intro (<span id="positionIntro" class="position">1</span>/12)</span
+            ><span>Tools (<span id="positionTools" class="position">1</span>/24)</span
+            ><span>Content (<span id="positionContent" class="position">1</span>/8)</span
+            ><span>Presentation (<span id="positionPresentation" class="position">1</span>/12)</span
+            ><span>Scripting (<span id="positionScripting" class="position">1</span>/12)</span
+            ><span>Scripting Another (<span id="positionScriptingAnother" class="position">1</span>/3)</span></span
           >
           @ <strong>Frontend CULS 2022</strong>
         </div>
       </div>
       <div id="presentation" class="presentation">
-        <div class="chapter" style="width: 1200vw">
+        <div id="intro" class="chapter" style="width: 1200vw">
           <section><h2>Frontend CULS 2022</h2></section>
           <section>
             <h2>Who am I?</h2>
@@ -110,7 +109,7 @@
           </section>
           <section><h2>Let&#39;s Go!</h2></section>
         </div>
-        <div class="chapter" style="width: 2400vw">
+        <div id="tools" class="chapter" style="width: 2400vw">
           <section><h2>Tools</h2></section>
           <section><h2>Source Control Management</h2></section>
           <section>
@@ -272,7 +271,7 @@
           </section>
           <section><h2>Content Delivery Networks</h2></section>
         </div>
-        <div class="chapter" style="width: 800vw">
+        <div id="content" class="chapter" style="width: 800vw">
           <section><h2>Content</h2></section>
           <section>
             <h2>Documents vs. Data</h2>
@@ -336,7 +335,7 @@
             </ul>
           </section>
         </div>
-        <div class="chapter" style="width: 1200vw">
+        <div id="presentation" class="chapter" style="width: 1200vw">
           <section><h2>Presentation</h2></section>
           <section>
             <h2>What we see</h2>
@@ -407,7 +406,7 @@
           </section>
           <section><h2>Afternoon Handson</h2></section>
         </div>
-        <div class="chapter" style="width: 1200vw">
+        <div id="scripting" class="chapter" style="width: 1200vw">
           <section><h2>Scripting</h2></section>
           <section>
             <h2>JavaScript</h2>
@@ -486,7 +485,7 @@
           </section>
           <section><h2>Frontend Developer Roadmap</h2></section>
         </div>
-        <div class="chapter" style="width: 300vw">
+        <div id="scripting-another" class="chapter" style="width: 300vw">
           <section>
             <h2>More pepe to your</h2>
             <ul>
@@ -499,8 +498,11 @@
           <section><h2>pepe&#39;s out</h2></section>
         </div>
       </div>
-
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="/script.js"></script>
+      <script src="slider.js"></script>
     </main>
   </body>
 </html>
