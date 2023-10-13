@@ -1,0 +1,32 @@
+
+.chapter {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  flex: 1;
+  min-width: 100%;
+}
+
+section:not(:first-child) {
+  display: none;
+}
+
+.presentation {
+  margin-top: 10dp;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* To center-align text within the sections */
+}
+
+
+.buttons .btn {
+  margin: 10px;
+}
+.titles-content {
+  margin-left: 10px;
+}
+
